@@ -24,8 +24,8 @@ function success(position) {
     // Definir iconos
 
     let inicio = L.icon({
-        iconUrl: '/images/leaf-green.png',
-        shadowUrl: '/images/leaf-shadow.png',
+        iconUrl: '/Roberto_Lluvia_trabajoJAVASCRIPT/images/leaf-green.png',
+        shadowUrl: '/Roberto_Lluvia_trabajoJAVASCRIPT/images/leaf-shadow.png',
         iconSize: [38, 95],
         shadowSize: [50, 64],
         iconAnchor: [22, 94],
@@ -34,8 +34,8 @@ function success(position) {
     })
 
     let final = L.icon({
-        iconUrl: '/images/leaf-red.png',
-        shadowUrl: '/images/leaf-shadow.png',
+        iconUrl: '/Roberto_Lluvia_trabajoJAVASCRIPT/images/leaf-red.png',
+        shadowUrl: '/Roberto_Lluvia_trabajoJAVASCRIPT/images/leaf-shadow.png',
         iconSize: [38, 95],
         shadowSize: [50, 64],
         iconAnchor: [22, 94],
@@ -44,8 +44,8 @@ function success(position) {
     })
 
     let track = L.icon({
-        iconUrl: '/images/leaf-orange.png',
-        shadowUrl: '/images/leaf-shadow.png',
+        iconUrl: '/Roberto_Lluvia_trabajoJAVASCRIPT/images/leaf-orange.png',
+        shadowUrl: '/Roberto_Lluvia_trabajoJAVASCRIPT/images/leaf-shadow.png',
         iconSize: [38, 95],
         shadowSize: [50, 64],
         iconAnchor: [22, 94],
