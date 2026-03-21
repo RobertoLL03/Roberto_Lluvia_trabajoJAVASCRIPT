@@ -1,79 +1,82 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #977adb;
-    padding-top: 200px;
+    margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-}
-
-main {
-    background-color: #825ed6;
-    border-radius: 45px;
-    margin: 15px auto;
-    padding: 5px 25px 25px;
-    width: 250px;
-}
-
-main h1 {
-    color: rgb(71, 17, 125);
 }
 
 /* Barra de navegación y cabecera */
 
-#cabecera {
-    height: 200px;
-    border-radius: 65px;
-    background-color: rgb(39, 17, 78, 1);
+header {
+    display: flex;
     position: fixed;
-    top: 7.5px;
-    left: 7.5px;
-    width: calc(100% - 15px);
-    flex-wrap: wrap;
-    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 51px);
+    margin: 10px;
+    padding: 15px;
+    font-size: large;
+    background-color: rgb(39, 17, 78);
+    border-radius: 150px;
+    z-index: 1;
 }
 
 #logo {
-    height: 160px;
+    height: 200px;
     padding: 20px;
-    border-radius: 400px;
+    padding-right: 50px;
 }
 
-#barraPags {
+#barraNavegacion {
     display: flex;
-    justify-content: right;
-    margin-right: 55px;
-    margin-top: -127px;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+    list-style: none;
+    gap: 90px;
 }
 
-#barraInicio {
-    margin-right: 60px;
-    font-weight: bold;
+nav ul li a{
+    color: white;
+    text-decoration: none;
 }
 
-#barraProductos {
-    font-weight: bold;
-    margin-right: 60px;
+/* ¿Qué es XANA? */
+
+main {
+    flex: 1;
+    width: 250px;
+    margin: 310px auto 25px;
+    padding: 45px;
+    background-color: #825ed6;
+    color: white;
+    border-radius: 120px;
 }
 
-#barraGaleria {
-    font-weight: bold;
+main h1 {
+    padding-bottom: 25px;
+    color: rgb(71, 17, 125);
 }
 
 /* Footer */
 
-#footer {
+footer {
     display: flex;
     flex-wrap: wrap;
-    background-color: #977adb;
-    padding: 40px;
     align-items: center;
+    padding: 40px;
+    margin: 10px;
+    margin-top: 0;
     font-size: 12px;
     color: white;
     background-color: rgb(39, 17, 78, 1);
-    border-radius: 45px;
+    border-radius: 150px;
     gap: 20px;
 }
 
-#footer a img {
+footer a img {
     width: 40px;
     height: 40px;
 }
@@ -83,7 +86,7 @@ main h1 {
 }
 
 #avLegal {
-    flex: 1 1 375px;
+    flex: 1 1 525px;
 }
 
 #copyright img {

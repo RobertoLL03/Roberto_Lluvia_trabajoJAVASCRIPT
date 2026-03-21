@@ -1,63 +1,64 @@
 body {
-    background-color: #977adb;
-    padding-top: 200px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-main {
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
-    padding: 5px 0px 25px;
-    width: 60vh;
+    min-height: 100vh;
+    background-color: #977adb;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Barra de navegación y cabecera */
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: center;
     align-items: center;
+    width: calc(100% - 51px);
+    margin: 10px;
+    padding: 15px;
+    font-size: large;
+    background-color: rgb(39, 17, 78);
+    border-radius: 150px;
+    z-index: 1;
+}
+
+#logo {
+    height: 200px;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+#barraNavegacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+    list-style: none;
+    gap: 90px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 310px auto 25px;
+    padding: 35px;
     background-color: #825ed6;
     border-radius: 45px;
 }
 
 main h1 {
+    padding-bottom: 25px;
     color: rgb(71, 17, 125);
-}
-
-/* Barra de dnavegación y cabecera */
-
-#cabecera {
-    height: 200px;
-    border-radius: 65px;
-    background-color: rgb(39, 17, 78, 1);
-    position: fixed;
-    top: 7.5px;
-    left: 7.5px;
-    width: calc(100% - 15px);
-    flex-wrap: wrap;
-    z-index: 1000;
-}
-
-#logo {
-    height: 160px;
-    padding: 20px;
-    border-radius: 400px;
-}
-
-#barraPags {
-    display: flex;
-    justify-content: right;
-    margin-right: 55px;
-    margin-top: -127px;
-}
-
-#barraInicio {
-    margin-right: 60px;
-    font-weight: bold;
-}
-
-#barraProductos {
-    font-weight: bold;
-    margin-right: 60px;
-}
-
-#barraGaleria {
-    font-weight: bold;
 }
 
 /* Secciones del formulario */
@@ -74,6 +75,12 @@ main h1 {
     margin-bottom: 0;
 }
 
+#tituloDatosContacto,#tituloPresupuesto,#tituloAceptacionCondiciones {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
 #presupuestoEstim {
     text-decoration: underline;
 }
@@ -83,6 +90,20 @@ main h1 {
     font-size: 25px;
 }
 
+input,select {
+    border-radius: 30px;
+    border: none;
+    box-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.35);
+}
+
+#enviar,#reset {
+    border: none;
+    margin: 15px;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.35);
+}
+
 .error {
     color: rgb(179, 0, 0);
     font-weight: bold;
@@ -90,20 +111,20 @@ main h1 {
 
 /* Footer */
 
-#footer {
+footer {
     display: flex;
-    flex-wrap: wrap;
-    background-color: #977adb;
-    padding: 40px;
     align-items: center;
+    padding: 40px;
+    margin: 10px;
+    margin-top: 0;
     font-size: 12px;
     color: white;
     background-color: rgb(39, 17, 78, 1);
-    border-radius: 45px;
+    border-radius: 150px;
     gap: 20px;
 }
 
-#footer a img {
+footer a img {
     width: 40px;
     height: 40px;
 }
@@ -113,7 +134,7 @@ main h1 {
 }
 
 #avLegal {
-    flex: 1 1 375px;
+    flex: 1 1 525px;
 }
 
 #copyright img {

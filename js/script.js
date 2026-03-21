@@ -1,6 +1,6 @@
 // Extraer noticias del archivo JSON
 
-fetch('data/noticias.json')
+fetch('../data/noticias.json')
   .then(respuesta => respuesta.json())
   .then(datosJSON => {
     const divNoticias = document.getElementById('noticias');
