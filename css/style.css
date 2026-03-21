@@ -82,13 +82,14 @@ main {
     font-size: 30px;
     font-style: oblique;
     font-weight: bold;
+    height: 550px;
     padding: 75px;
     border-radius: 100px;
     color: white;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.375)),
         url('../assets/images/entorno_hacker_portada.gif');
-    background-size: cover;
+    background-size: 1470px;
     background-repeat: no-repeat;
     background-position-y: center;
 }
