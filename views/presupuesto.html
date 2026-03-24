@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto - XANA</title>
+    <link rel="icon" href="../assets/icons/favicon_xana.jpeg">
+    <link rel="stylesheet" href="../css/style_presupuesto.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../assets/images/xana_logo.jpg" id="logo" alt="Inicio - XANA">
+        </a>
+        
+        <nav>
+            <ul id="barraNavegacion">
+                <li id="barraInicio"><a href="../index.html">INICIO</a></li>
+                <li id="barraProductos"><a href="../views/productos.html">PRODUCTOS</a></li>
+                <li id="barraGaleria"><a href="../views/galeria.html">GALERÍA</a></li>
+                <li id="barraContacto"><a href="../views/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulario de solicitud</h1>
+
+        <form id="presupuesto" name="presupuesto">
+            <div id="recuadro1">
+                <span id="tituloDatosContacto">Datos de contacto</span><br><br><br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required><br><br>
+                <div class="error" id="errorNombre"></div><br>
+
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" required><br><br>
+                <div class="error" id="errorApellidos"></div><br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="telefono" id="telefono" required><br><br>
+                <div class="error" id="errorTelefono"></div><br>
+
+                <label for="correoElect">Correo electrónico:</label>
+                <input type="text" name="correoElect" id="correoElect" required><br><br>
+                <div class="error" id="errorCorreo"></div><br>
+            </div>
+        
+            <div id="recuadro2">
+                <span id="tituloPresupuesto">Presupuesto</span><br><br><br>
+                <label>Elige un producto:</label>
+                <select name="productos" id="productos">
+                    <option value="teclado">Teclado 35 €</option>
+                    <option value="raton">Ratón 28 €</option>
+                    <option value="monitor">Monitor 240 €</option>
+                </select><br><br>
+
+                <label for="plazo">Plazo de entrega:</label>
+                <input type="number" id="plazo" required> días<br><br>
+
+                <label>Elija los extras para el producto:</label><br><br>
+                <input type="checkbox" name="alfombrilla" id="alfombrilla" class="extra">Alfombrilla 5 €
+                <input type="checkbox" name="toallitas" id="toallitas" class="extra">Toallitas 3 €
+                <input type="checkbox" name="pasta" id="pasta" class="extra">Pasta térmica 7 €<br><br>
+            
+                <label id="presupuestoEstim">Presupuesto total:</label>
+                <span id="presupTotal"></span><br><br>
+            </div>
+            
+            <div id="recuadro3">
+                <span id="tituloAceptacionCondiciones">Aceptación de condiciones y envío de presupuesto</span><br><br><br>
+                <input type="checkbox" name="politPriv" id="politPriv" required>He leído la política de privacidad<br><br>
+                <input type="submit" name="enviar" id="enviar" value="Enviar formulario">
+                <input type="reset" name="reset" id="reset" value="Limpiar">
+            </div>
+        </form>
+    </main>
+
+    <footer id="footer">
+        <a href="https://facebook.com" title="XANA - Facebook" target="_blank">
+            <img src="../assets/images/facebook_logo.png" id="logoFacebook" alt="logoFacebook">
+        </a>
+        
+        <a href="https://instagram.com" title="XANA - Instagram" target="_blank">
+            <img src="../assets/images/instagram_logo.png" id="logoInstagram" alt="logoInstagram">
+        </a>
+
+        <a href="https://x.com" title="XANA - X" target="_blank">
+            <img src="../assets/images/x_logo.jpg" id="logoX" alt="logoX">
+        </a>
+
+        <a href="https://linkedin.com" title="XANA - LinkedIn" target="_blank">
+            <img src="../assets/images/linkedin_logo.png" id="logoLinkedIn" alt="logoLinkedIn">
+        </a>
+
+        <div id="direccion">
+            Pl. del Alto del Rollo, 7, 37003 Salamanca
+        </div>
+        <div id="avLegal">
+            <a href="#" style="color: white;">Términos y condiciones</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" style="color: white;">Política de privacidad</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" style="color: white;">Aviso legal</a>&nbsp;&nbsp;&nbsp;
+            <a href="../views/conoceXANA.html" style="color: white;">¿Quiénes somos?</a>
+        </div>
+        <div id="copyright">
+            <img src="../assets/images/xana_logo.jpg" title="XANA S.L.">
+            © 2026 XANA S.L.<br>
+            Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

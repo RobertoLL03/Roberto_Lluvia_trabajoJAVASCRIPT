@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - XANA</title>
+    <link rel="icon" href="../assets/icons/favicon_xana.jpeg">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+    <link rel="stylesheet" href="../css/style_contacto.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../assets/images/xana_logo.jpg" id="logo" alt="Inicio - XANA">
+        </a>
+        
+        <nav>
+            <ul id="barraNavegacion">
+                <li id="barraInicio"><a href="../index.html">INICIO</a></li>
+                <li id="barraProductos"><a href="../views/productos.html">PRODUCTOS</a></li>
+                <li id="barraGaleria"><a href="../views/galeria.html">GALERÍA</a></li>
+                <li id="barraContacto"><a href="../views/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Datos de contacto</h1>
+
+        <div id="datosContacto">
+            <h2>XANA S.L.</h2>
+            <p><b>Dirección:</b> Pl. del Alto del Rollo, 7, 37003 Salamanca</p>
+            <p><b>Teléfono:</b> +34 923 394 545</p>
+            <p><b>Correo electrónico:</b> xana@gmail.com</p>
+        </div>
+
+        <div id="map"></div>
+    </main>
+
+    <footer id="footer">
+        <a href="https://facebook.com" title="XANA - Facebook" target="_blank">
+            <img src="../assets/images/facebook_logo.png" id="logoFacebook" alt="logoFacebook">
+        </a>
+        
+        <a href="https://instagram.com" title="XANA - Instagram" target="_blank">
+            <img src="../assets/images/instagram_logo.png" id="logoInstagram" alt="logoInstagram">
+        </a>
+
+        <a href="https://x.com" title="XANA - X" target="_blank">
+            <img src="../assets/images/x_logo.jpg" id="logoX" alt="logoX">
+        </a>
+
+        <a href="https://linkedin.com" title="XANA - LinkedIn" target="_blank">
+            <img src="../assets/images/linkedin_logo.png" id="logoLinkedIn" alt="logoLinkedIn">
+        </a>
+
+        <div id="direccion">
+            Pl. del Alto del Rollo, 7, 37003 Salamanca
+        </div>
+        <div id="avLegal">
+            <a href="#" style="color: white;">Términos y condiciones</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" style="color: white;">Política de privacidad</a>&nbsp;&nbsp;&nbsp;
+            <a href="#" style="color: white;">Aviso legal</a>&nbsp;&nbsp;&nbsp;
+            <a href="../views/conoceXANA.html" style="color: white;">¿Quiénes somos?</a>
+        </div>
+        <div id="copyright">
+            <img src="../assets/images/xana_logo.jpg" title="XANA S.L.">
+            © 2026 XANA S.L.<br>
+            Todos los derechos reservados
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/script_mapa.js"></script>
+</body>
+</html>

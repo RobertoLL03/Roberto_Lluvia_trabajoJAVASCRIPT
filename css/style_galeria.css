@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #977adb;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Barra de navegación y cabecera */
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 51px);
+    margin: 10px;
+    padding: 15px;
+    font-size: large;
+    background-color: rgb(39, 17, 78);
+    border-radius: 150px;
+    z-index: 1;
+}
+
+#logo {
+    height: 200px;
+    padding: 20px;
+    padding-right: 50px;
+    border-radius: 100%;
+}
+
+#barraNavegacion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+    list-style: none;
+    gap: 90px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Main */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 310px 25px 25px;
+    border-radius: 120px;
+}
+
+main h1 {
+    padding-bottom: 25px;
+    color: rgb(71, 17, 125);
+}
+
+/* Tip */
+
+#tip {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    padding-right: 30px;
+    border-radius: 45px;
+    background-color: #825ed6;
+    color: white;
+    gap: 15px;
+}
+
+#tip img {
+    padding: 20px;
+}
+
+/* Galería de imágenes */
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    max-width: 500px;
+    margin: 45px;
+    gap: 15px;
+}
+
+#galeria img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+}
+
+/* Contenedor principal del lightbox */
+
+#contenedor-principal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+
+#img-activa {
+    border-radius: 30px;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #f3f3f3;
+}
+
+#btn-de-cierre {
+    position: absolute;
+    top: 75px;
+    right: 100px;
+}
+
+#btn-de-retroceso {
+    position: absolute;
+    left: 100px;
+}
+
+#btn-de-siguiente {
+    position: absolute;
+    right: 100px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin: 10px;
+    margin-top: 0;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(39, 17, 78, 1);
+    border-radius: 150px;
+    gap: 20px;
+}
+
+footer a img {
+    width: 40px;
+    height: 40px;
+}
+
+#direccion {
+    flex: 1 1;
+}
+
+#avLegal {
+    flex: 1 1 525px;
+}
+
+#copyright img {
+    display: block;
+    margin-left: -7px;
+    width: 80px;
+}
